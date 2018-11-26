@@ -1,4 +1,6 @@
 class TweetsController < ApplicationController
+  attr_reader :title, :content, :id
+
   get '/tweets' do
     erb :'tweets/show'
   end
