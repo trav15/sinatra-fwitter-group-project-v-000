@@ -3,4 +3,8 @@ class UsersController < ApplicationController
     erb :'users/new'
   end
 
+  get '/test' do
+    "TESTING"
+  end
+
 end
