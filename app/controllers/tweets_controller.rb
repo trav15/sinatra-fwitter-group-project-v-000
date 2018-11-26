@@ -1,8 +1,8 @@
 class TweetsController < ApplicationController
   attr_reader :content, :user_id
 
-  get '/tweets' do
-    @tweets = Tweet.all
+  get '/tweets/' do
+    # @tweets = Tweet.all
     erb :'tweets/tweets'
   end
 
