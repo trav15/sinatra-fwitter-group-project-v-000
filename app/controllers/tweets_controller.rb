@@ -10,7 +10,6 @@ class TweetsController < ApplicationController
   end
 
   post '/tweets' do
-   @title = params[:title]
    @content = params[:content]
    redirect '/tweets'
   end
