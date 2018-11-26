@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  attr_reader :title, :content, :id
+  attr_reader :content, :user_id
 
   get '/tweets' do
     erb :'tweets/show'
@@ -11,6 +11,7 @@ class TweetsController < ApplicationController
 
   post '/tweets' do
    @content = params[:content]
+   @user_id = params[:user_id]
    redirect '/tweets'
   end
 
