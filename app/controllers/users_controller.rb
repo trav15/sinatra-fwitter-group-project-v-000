@@ -3,6 +3,6 @@ class UsersController < ApplicationController
     erb :'users/new'
   end
 
-  
+  post ''
 
 end

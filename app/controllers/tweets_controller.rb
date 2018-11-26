@@ -1,11 +1,16 @@
 class TweetsController < ApplicationController
- get '/tweets/new' do
-   erb :'tweets/new'
- end
+  get '/tweets' do
+    erb :'tweets/show'
+  end
 
- post '/tweets' do
+  get '/tweets/new' do
+   erb :'tweets/new'
+  end
+
+  post '/tweets' do
    @title = params[:title]
    @content = params[:content]
- end
+   redirect '/tweets'
+  end
 
 end
